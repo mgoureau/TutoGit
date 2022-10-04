@@ -55,7 +55,7 @@ int main()
         begin(f),
         [&](auto const& index)
         {
-            return sin(x[index]);
+            return 1.0;
         }
     );
 
@@ -63,7 +63,7 @@ int main()
     T sum = 0.0;
     for (auto iter = 0U; iter < n; iter++)
     {
-        sum += ((h/2.0)*(f[iter]+f[iter+size_t(1)]));
+        sum += 1.0;
     }
 
     // Evaluate the numerical error
