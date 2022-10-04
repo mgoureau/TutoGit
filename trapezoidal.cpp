@@ -43,7 +43,7 @@ int main()
         begin(x),
         [&](auto const& index)
         {
-            return 1.0;
+            return a + index * h;
         }
     );
 
