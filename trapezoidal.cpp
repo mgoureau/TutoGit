@@ -10,7 +10,7 @@
 typedef double T;
 
 // Define number of sub-interval
-constexpr auto n = 1'000U;
+constexpr auto n = 50'000U;
 
 // Define the arrays
 std::array<T, n + 1> x;
