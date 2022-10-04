@@ -55,7 +55,7 @@ int main()
         begin(f),
         [&](auto const& index)
         {
-            return 1.0;
+            return sin(x[index]);
         }
     );
 
