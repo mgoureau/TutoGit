@@ -63,7 +63,7 @@ int main()
     T sum = 0.0;
     for (auto iter = 0U; iter < n; iter++)
     {
-        sum += 1.0;
+        sum += ((h/2.0)*(f[iter]+f[iter+size_t(1)]));
     }
 
     // Evaluate the numerical error
