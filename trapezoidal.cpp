@@ -24,7 +24,7 @@ constexpr T h = (b-a)/n;
 // Define analytical solution
 T solution(const T& a, const T& b)
 {
-    return 1.0;
+    return cos(a)-cos(b);
 }
 
 int main()
