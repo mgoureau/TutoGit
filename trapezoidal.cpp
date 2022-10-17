@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <execution>
+//#include <execution>
 #include <numeric>
 #include <iterator>
 #include <array>
@@ -38,7 +38,7 @@ int main()
     // Initialize the x-coordinates array
     transform
     (
-        execution::par_unseq,
+//        execution::par_unseq,
         begin(indices), end(indices),
         begin(x),
         [&](auto const& index)
@@ -50,7 +50,7 @@ int main()
     // Initialize the function array
     transform
     (
-        execution::par_unseq,
+  //      execution::par_unseq,
         begin(indices), end(indices),
         begin(f),
         [&](auto const& index)
